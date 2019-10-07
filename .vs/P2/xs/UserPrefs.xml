@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{851172B4-1111-4380-7AB7-5C936731842D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/I_Tile_Movement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="65" Column="6" />
+      <File FileName="Assets/Scripts/MoveTile.cs" Line="5" Column="38" />
+      <File FileName="Assets/Scripts/ShiftColor.cs" Line="11" Column="23" />
+      <File FileName="Assets/Scripts/TouchBorder.cs" Line="66" Column="6" />
+      <File FileName="Assets/Collector.cs" Line="25" Column="19" />
+      <File FileName="Assets/SpawnTetris.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/I_Tile_Movement.cs" Line="5" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="P2" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="I_Tile_Movement.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="270c0c2f-e066-47ea-931c-15ec53c5a620" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
