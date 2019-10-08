@@ -24,7 +24,7 @@ public class MoveTile : MonoBehaviour
     {
         if (is_active)
         {
-            rb.velocity = new Vector3(0, -3, 0);
+            //rb.velocity = new Vector3(0, -3, 0);
 
             if (!is_moving)
             {
@@ -35,9 +35,10 @@ public class MoveTile : MonoBehaviour
 
     void GetInput()
     {
-        float horizontal_input = Input.GetAxisRaw("Horizontal");
-        bool up = Input.GetKeyDown(KeyCode.UpArrow);
-        bool down = Input.GetKey(KeyCode.DownArrow);
+        float horizontal_input = Input.GetAxisRaw("Joystick2Horizontal");
+        bool joy_rotate = Input.GetKeyDown(KeyCode.Joystick2Button16);
+        bool rotate = Input.GetKeyDown(KeyCode.UpArrow);
+        float down = Input.GetAxisRaw("Joystick2Vertical");
 
         Vector3 destPos;
 
@@ -46,11 +47,10 @@ public class MoveTile : MonoBehaviour
             is_moving = true;
             destPos = transform.position + new Vector3(1, 0, 0);
 
-            destPos = CheckBorder(destPos, "Right");
-
             transform.position = destPos;
-            StartCoroutine(Count(0.1f));
+            CheckBorder();
 
+            StartCoroutine(Count(0.1f));
         }
 
         else if (horizontal_input < 0 && canMoveLeft)
@@ -58,86 +58,66 @@ public class MoveTile : MonoBehaviour
             is_moving = true;
             destPos = transform.position + new Vector3(-1, 0, 0);
 
-            destPos = CheckBorder(destPos, "Left");
-
             transform.position = destPos;
+            CheckBorder();
+
             StartCoroutine(Count(0.1f));
         }
 
-        if (up)
+        if (rotate)
         {
-            destPos = transform.position;
-            transform.Rotate(0, 0, -90);
-
-            if (transform.position.x > 0)
+            if (CheckRotate())
             {
-                destPos = CheckBorder(destPos, "Right");
+                Rotate();
             }
 
-            else (transform.position.y > 0){
-                destPos = CheckBorder(destPos, "Left");
-            }
-
-            transform.position = destPos;
+            CheckBorder();
         }
 
-        else if (down)
+        else if (down < 0)
         {
-            rb.velocity = new Vector3(0, -8, 0);
+            //rb.velocity = new Vector3(0, -8, 0);
         }
 
-        else if (!down)
+        else if (down >= 0)
         {
-            rb.velocity = new Vector3(0, -3, 0);
+            //rb.velocity = new Vector3(0, -3, 0);
         }
     }
 
-    Vector3 CheckBorder(Vector3 destPos, string dir)
+    public virtual void Rotate()
     {
+        transform.Rotate(0, 0, -90);
+
         float z = transform.eulerAngles.z;
 
-        // find offset
-        if (gameObject.name == "I_Tile")
+        // check if move left by 1
+        if (z - 90 < 0.001)
         {
-            if ((z % 360) < 0.0001 || (z % 180) < 0.0001)
-            {
-                offset = 0.5f;
-            }
-
-            else if ((z % 90) < 0.0001 || (z % 270) < 0.0001)
-            {
-                offset = 2f;
-            }
+            //Debug.Log("move left by 1");
+            //transform.position += new Vector3(0, 0, 0);
         }
 
-        // find destPos
-        if (dir == "Right")
+        // check if move right by 1
+        else if (z - 0 < 0.001)
         {
-            float x = destPos.x + offset;
+            //Debug.Log("move right by 1");
 
-            if (x > 8f)
-            {
-                destPos = new Vector3(8f - offset, destPos.y, 0);
-
-                return destPos;
-            }
-
-            return destPos;
+            //transform.position += new Vector3(1, 0, 0);
         }
 
-        else
-        {
-            float x = destPos.x - offset;
+        CheckBorder();
+    }
 
-            if (x < -8f)
-            {
-                destPos = new Vector3(-8f + offset, destPos.y, 0);
+    public virtual bool CheckRotate()
+    {
+        // overwritten
+        return false;
+    }
 
-                return destPos;
-            }
-
-            return destPos;
-        }
+    public virtual void CheckBorder()
+    {
+        // overwritten
     }
 
     void OnCollisionEnter(Collision collision)
@@ -151,55 +131,16 @@ public class MoveTile : MonoBehaviour
             is_active = false;
             SpawnTetris.spawn = true;
         }
-
-        else if (tag_name == "Border")
-        {
-            if (collision.gameObject.name.Contains("Left"))
-            {
-                canMoveLeft = false;
-            }
-
-            else if (collision.gameObject.name.Contains("Right"))
-            {
-                canMoveRight = false;
-            }
-        }
     }
 
     void OnCollisionStay(Collision collision)
     {
         string tag_name = collision.gameObject.tag;
-
-        if (tag_name == "Border")
-        {
-            if (collision.gameObject.name.Contains("Left"))
-            {
-                canMoveLeft = false;
-            }
-
-            else if (collision.gameObject.name.Contains("Right"))
-            {
-                canMoveRight = false;
-            }
-        }
     }
 
     void OnCollisionExit(Collision collision)
     {
         string tag_name = collision.gameObject.tag;
-
-        if (tag_name == "Border")
-        {
-            if (collision.gameObject.name.Contains("Left"))
-            {
-                canMoveLeft = true;
-            }
-
-            else if (collision.gameObject.name.Contains("Right"))
-            {
-                canMoveRight = true;
-            }
-        }
     }
 
     IEnumerator Count(float num)

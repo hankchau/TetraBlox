@@ -69,9 +69,11 @@
     <Compile Include="Assets\Scripts\MoveTile.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PowerUpMovement.cs" />
+    <Compile Include="Assets\Scripts\S_Tile_Movement.cs" />
     <Compile Include="Assets\Scripts\ShiftColor.cs" />
     <Compile Include="Assets\Scripts\SpawnTetris.cs" />
     <Compile Include="Assets\Scripts\TouchBorder.cs" />
+    <Compile Include="Assets\Scripts\Z_Tile_Movement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/HankChau/Desktop/eecs494/P2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void GetInput()
     {
-        float input_horizontal = Input.GetAxisRaw("Horizontal");
+        float input_horizontal = Input.GetAxis("Joystick1Horizontal");
 
         if (input_horizontal > 0)
         {
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(-3, rb.velocity.y, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button16))
         {
             if (GroundCheck())
             {
