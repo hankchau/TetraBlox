@@ -25,8 +25,11 @@ public class S_Tile_Movement : MoveTile
         // 0 degrees
         if (Mathf.Abs(z - 0) < 0.001f)
         {
-            leftHit = Physics.Raycast(transform.position, Physics.);
+            //Vector3 downVector = new Vector3()
+            //leftHit = Physics.Raycast(transform.position, Vector3.left + , );
         }
+
+        return true;
 
     }
 

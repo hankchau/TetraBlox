@@ -16,13 +16,14 @@ public class Collector : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        string tag_name = collision.gameObject.tag;
+        string tag_name = other.gameObject.tag;
 
         if (tag_name == "Goal")
         {
             // Win
+            Debug.Log("Win!");
         }
     }
 }

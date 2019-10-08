@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7222539230099747167}
   - component: {fileID: 8839682649297583495}
-  - component: {fileID: 14760919018548412}
+  - component: {fileID: 138654289775238160}
   m_Layer: 9
   m_Name: O_Tile
   m_TagString: Tetris
@@ -52,7 +52,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &14760919018548412
+--- !u!114 &138654289775238160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 14760919018548413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd79ad5d14974a81b8a8477d223f172, type: 3}
+  m_Script: {fileID: 11500000, guid: b16debdba0fb84e08b2cdb54c37f2e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canMoveRight: 1
@@ -155,7 +155,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3375957993596899728
 GameObject:
@@ -246,7 +246,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3490716148245346019
 GameObject:
@@ -337,7 +337,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4543806405924709891
 GameObject:
@@ -428,5 +428,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}

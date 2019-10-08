@@ -7,7 +7,7 @@ public class Z_Tile_Movement : MoveTile
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class Z_Tile_Movement : MoveTile
     {
         float z = transform.eulerAngles.z;
 
-        
+        return true;
     }
 
     public override void CheckBorder()

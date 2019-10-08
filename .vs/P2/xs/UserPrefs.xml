@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{851172B4-1111-4380-7AB7-5C936731842D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Z_Tile_Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/S_Tile_Movement.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="41" Column="10" />
-      <File FileName="Assets/Scripts/MoveTile.cs" Line="96" Column="10" />
+      <File FileName="Assets/Scripts/MoveTile.cs" Line="105" Column="1" />
       <File FileName="Assets/Scripts/I_Tile_Movement.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/S_Tile_Movement.cs" Line="27" Column="84" />
+      <File FileName="Assets/Scripts/S_Tile_Movement.cs" Line="23" Column="23" />
       <File FileName="Assets/Scripts/ShiftColor.cs" Line="11" Column="23" />
       <File FileName="Assets/Scripts/TouchBorder.cs" Line="21" Column="25" />
-      <File FileName="Assets/Scripts/Z_Tile_Movement.cs" Line="27" Column="81" />
+      <File FileName="Assets/Scripts/Z_Tile_Movement.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +15,7 @@
           <Node name="P2" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Z_Tile_Movement.cs" selected="True" />
+                <Node name="S_Tile_Movement.cs" selected="True" />
               </Node>
             </Node>
           </Node>

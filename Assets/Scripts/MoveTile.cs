@@ -16,7 +16,7 @@ public class MoveTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -24,7 +24,8 @@ public class MoveTile : MonoBehaviour
     {
         if (is_active)
         {
-            //rb.velocity = new Vector3(0, -3, 0);
+            rb = GetComponent<Rigidbody>();
+            rb.velocity = new Vector3(0, -3, 0);
 
             if (!is_moving)
             {
@@ -36,7 +37,7 @@ public class MoveTile : MonoBehaviour
     void GetInput()
     {
         float horizontal_input = Input.GetAxisRaw("Joystick2Horizontal");
-        bool joy_rotate = Input.GetKeyDown(KeyCode.Joystick2Button16);
+        //bool rotate = Input.GetKeyDown(KeyCode.Joystick2Button16);
         bool rotate = Input.GetKeyDown(KeyCode.UpArrow);
         float down = Input.GetAxisRaw("Joystick2Vertical");
 
@@ -76,15 +77,16 @@ public class MoveTile : MonoBehaviour
 
         else if (down < 0)
         {
-            //rb.velocity = new Vector3(0, -8, 0);
+            rb.velocity = new Vector3(0, -8, 0);
         }
 
         else if (down >= 0)
         {
-            //rb.velocity = new Vector3(0, -3, 0);
+            rb.velocity = new Vector3(0, -3, 0);
         }
     }
 
+    // virtual func
     public virtual void Rotate()
     {
         transform.Rotate(0, 0, -90);

@@ -89,7 +89,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1527748608016436053
 GameObject:
@@ -180,7 +180,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4328413288970020783
 GameObject:
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1705019710681253502}
   - component: {fileID: 7118211935690761690}
-  - component: {fileID: 4328413289418264172}
+  - component: {fileID: 4328413288970020784}
   m_Layer: 9
   m_Name: J_Tile
   m_TagString: Tetris
@@ -207,8 +207,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4328413288970020783}
-  m_LocalRotation: {x: -0, y: -0, z: -0.70326805, w: -0.71092486}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalRotation: {x: -0, y: 0, z: -0.70327085, w: -0.710922}
+  m_LocalPosition: {x: 0, y: 13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_Children:
   - {fileID: 794112479161494779}
@@ -234,7 +234,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &4328413289418264172
+--- !u!114 &4328413288970020784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4328413288970020783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd79ad5d14974a81b8a8477d223f172, type: 3}
+  m_Script: {fileID: 11500000, guid: 89d00b4887381493a84cc543b1a1fe85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canMoveRight: 1
@@ -337,7 +337,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7028949743325891283
 GameObject:
@@ -428,5 +428,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.1}
+  m_Size: {x: 0.8, y: 0.8, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}

@@ -9,6 +9,7 @@ TagManager:
   - Tetris
   - Tile
   - Border
+  - Goal
   layers:
   - Default
   - TransparentFX
