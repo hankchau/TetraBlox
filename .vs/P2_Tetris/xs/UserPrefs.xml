@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{516D2313-5BDA-5267-525B-A85C1D395F9F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/T_Tile_Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoveTile.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="22" Column="6" />
-      <File FileName="Assets/Scripts/SpawnTetris.cs" Line="27" Column="6" />
-      <File FileName="Assets/Scripts/Collector.cs" Line="24" Column="10" />
-      <File FileName="Assets/Scripts/MoveTile.cs" Line="20" Column="6" />
-      <File FileName="Assets/Scripts/O_Tile_Movement.cs" Line="39" Column="57" />
-      <File FileName="Assets/Scripts/T_Tile_Movement.cs" Line="84" Column="1" />
+      <File FileName="Assets/Scripts/J_Tile_Movement.cs" Line="79" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="25" Column="24" />
+      <File FileName="Assets/Scripts/SpawnTetris.cs" Line="14" Column="22" />
+      <File FileName="Assets/Scripts/Collector.cs" Line="36" Column="18" />
+      <File FileName="Assets/Scripts/MoveTile.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="11" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +14,7 @@
           <Node name="P2_Tetris" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="T_Tile_Movement.cs" selected="True" />
+                <Node name="MoveTile.cs" selected="True" />
               </Node>
             </Node>
           </Node>

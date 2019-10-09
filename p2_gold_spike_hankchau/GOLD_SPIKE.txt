@@ -1,0 +1,7 @@
+TetraBlox is a multiplayer platformer that requires two players to cooperate together. In order to obtain the magic tile, players must utilize tetriminos and maneuver their way through the map.
+
+My game's main "mechanic" revolves around the interaction between the two players. One player controls tetriminos and the other moves around the environment created real-time by the first player. 
+
+Game Controls:
+Player1: Arrow Keys for Tetris movement
+Player2: Xbox controller main axes for movement, A to jump (for Mac)
